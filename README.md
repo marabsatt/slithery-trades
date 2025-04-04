@@ -7,15 +7,15 @@ This project demonstrates a fully automated pipeline for constructing and optimi
 ## Objectives
 
 - Retrieve and process live market data for NASDAQ-100 and S&P 500 companies.
-- Construct a financial portfolio with diversification and risk-return optimization.
+- Construct an equity portfolio with diversification and risk-return optimization.
 - Use `Riskfolio-Lib` to apply advanced optimization techniques such as:
   - Mean-Variance Optimization (MVO)
   - Risk Parity
   - Conditional Value at Risk (CVaR)
-- Integrate with Interactive Brokers for live market access.
+- Integrate with Interactive Brokers for live market access and order execution.
 
 ## Frameworks Used
-See requirements.txt for full list
+See `requirements.txt` for full list
 
 - **Python**
 - **Pandas / NumPy** for data manipulation
@@ -39,8 +39,8 @@ See requirements.txt for full list
    - Apply `nest_asyncio` to enable nested event loops in Jupyter
 
 2. **Data Retrieval**:
-   - Scrape NASDAQ-100 tickers from Wikipedia
-   - Scrape S&P 500 tickers from Wikipedia
+   - Scrape NASDAQ-100 tickers from [Wikipedia](https://en.wikipedia.org/wiki/NASDAQ-100)
+   - Scrape S&P 500 tickers from [Wikipedia](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies)
    - Retrieve historical prices using `yfinance`
    - Real-time data access through Interactive Brokers
 
@@ -56,16 +56,19 @@ See requirements.txt for full list
 
 ## Setup
 
-**IBKR Confifuration**:
+**IBKR Configuration**:
 - TWS or IB Gateway running locally (default port 7497)
 - A valid Interactive Brokers account (paper trading works)
 
-**Running the Notebook**:
-- Open 'main.ipynb' in Jupyter and run the cells sequentially. Ensure your IB Gateway is connected before starting.
+**Riskfolio-Lib**:
+- Please follow the installation instruction for [Riskfolio-lib](https://riskfolio-lib.readthedocs.io/en/latest/install.html)
 
-## Disclaimer
+**Running the Notebook**:
+- Open `main.ipynb` in Jupyter and run the cells sequentially. Ensure your IB Gateway is connected before starting.
+
+## *Disclaimer*
 - *This project is intended for educational and research purposes.*
-- *Real trading should be approached cautiously; backtesting and paper trading are recommended before deployment to a production environment.*
+- *Real trading should be approached cautiously; backtesting and paper trading are recommended before deploying to a production environment.*
 - *Some elements may require further enhancement for production use, such as exception handling, logging, and parameter tuning.*
 
 ### Prerequisites
