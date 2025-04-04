@@ -11,7 +11,7 @@ This project demonstrates a fully automated pipeline for constructing and optimi
 - Use `Riskfolio-Lib` to apply advanced optimization techniques such as:
   - Mean-Variance Optimization (MVO)
   - Risk Parity
-  - Conditional Value at Risk (CVaR)
+  - Maximizing Sharpe Ratio
 - Integrate with Interactive Brokers for live market access and order execution.
 
 ## Frameworks Used
