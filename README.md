@@ -57,8 +57,12 @@ See `requirements.txt` for full list
 ## Setup
 
 **IBKR Configuration**:
-- TWS or IB Gateway running locally (default port 7497)
+To adjust the settings in IBKR Workstation follow these steps *Configuration > API > Settings*
 - A valid Interactive Brokers account (paper trading works)
+- TWS or IB Gateway running locally (default port 7497)
+- Enable ActiveX and Socket Clients
+- Disable Read-Only API
+
 
 **Riskfolio-Lib**:
 - Please follow the installation instruction for [Riskfolio-lib](https://riskfolio-lib.readthedocs.io/en/latest/install.html)
