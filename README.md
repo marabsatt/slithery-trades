@@ -22,7 +22,6 @@ See `requirements.txt` for full list
 - **yFinance** for historical financial data
 - **IB_insync** for real-time trading via Interactive Brokers
 - **Riskfolio-Lib** for portfolio optimization
-- **Matplotlib** for data visualization
 - **BeautifulSoup / pandas.read_html** for web scraping
 
 ## Data Sources
@@ -46,13 +45,8 @@ See `requirements.txt` for full list
 
 3. **Portfolio Construction**:
    - Filter, clean, and structure the price data
-   - Calculate returns and covariance matrices
+   - Calculate returns
    - Use `Riskfolio-Lib` to optimize the portfolio
-
-4. **Visualization**:
-   - Efficient frontier plots
-   - Risk contribution charts
-   - Asset allocation visualizations
 
 ## Setup
 
@@ -80,6 +74,6 @@ To adjust the settings in IBKR Workstation follow these steps *Configuration > A
 Install required libraries via pip:
 
 ```bash
-pip install yfinance ib_insync riskfolio-lib nest_asyncio waiting
+pip install -r requirements.txt
 
 
